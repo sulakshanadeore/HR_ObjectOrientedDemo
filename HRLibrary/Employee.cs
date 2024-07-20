@@ -6,31 +6,60 @@
         string? _fname, _lname, _city;
         long? _adharno;
 
+//Read-Write
+        public string FirstName
+        {
+            set { _fname = value; }
+            get { return _fname; }
+        }
+
+
+
         static Employee()
         {
             _empno = 0;
             Console.WriteLine("empno initialized....");
         }
-        public int NewEmployee(string? fname,string? lname,string? city,long? adharno)
+
+        //Read only
+        public int Empno
         {
+            get { 
+            
             _empno++;
-
-
-            this._fname = fname;
-            this._lname = lname;
-            this._city = city;
-            this._adharno = adharno;    
-        return _empno;
+                return _empno;
+            }
         }
 
-        public void PrintData()
+
+        //Write Only
+        public long AadharID
         {
-            Console.WriteLine(this._fname);
-            Console.WriteLine(this._lname);
-            Console.WriteLine(this._city);
-            Console.WriteLine(this._adharno);
-
+            set { _adharno = value; }
+        
         }
+
+        private DateTime _doj;
+
+        public DateTime JoiningDate
+        {
+            get { return _doj; }
+            set { _doj = value; }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
