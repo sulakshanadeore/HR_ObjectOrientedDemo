@@ -5,6 +5,11 @@ internal class Program
     private static void Main(string[] args)
     {
 
+        Employee emp = new Employee("Amitabh", "Bachhan", "Mumbai", "Galaxy", "India");
+        Console.WriteLine(emp.FullName);
+
+
+
         //Dept d = new Dept();
         //Console.WriteLine("Enter Deptno");
         //d.Deptno=Convert.ToInt32(Console.ReadLine());
@@ -35,26 +40,26 @@ internal class Program
         //TimeSpan t1 = new TimeSpan();
         //TimeSpan t2=new TimeSpan(seconds:30,hours:1,minutes:1);
 
-        WorkProjects p = new WorkProjects(projid: 1, projname: "Uber", dur: 24);
-        Console.WriteLine(p.ProjectId);
-        Console.WriteLine(p.ProjectName);
-        Console.WriteLine(p.Duration);
-        Console.WriteLine(p.CalculateEndDate());
-        Console.WriteLine("-------------------");
-        WorkProjects p1 = new WorkProjects(projid: 1, projname: "Uber", dur: 24);
-        Console.WriteLine(p1.ProjectId);
-        Console.WriteLine(p1.ProjectName);
-        Console.WriteLine(p1.Duration);
-        Console.WriteLine(p1.CalculateEndDate());
-        Console.WriteLine("--------------------");
+        //WorkProjects p = new WorkProjects(projid: 1, projname: "Uber", dur: 24);
+        //Console.WriteLine(p.ProjectId);
+        //Console.WriteLine(p.ProjectName);
+        //Console.WriteLine(p.Duration);
+        //Console.WriteLine(p.CalculateEndDate());
+        //Console.WriteLine("-------------------");
+        //WorkProjects p1 = new WorkProjects(projid: 1, projname: "Uber", dur: 24);
+        //Console.WriteLine(p1.ProjectId);
+        //Console.WriteLine(p1.ProjectName);
+        //Console.WriteLine(p1.Duration);
+        //Console.WriteLine(p1.CalculateEndDate());
+        //Console.WriteLine("--------------------");
 
-        object o=p.ProjectName.ToString() + p.ProjectId.ToString() + p.Duration.ToString();
-        Console.WriteLine(o);//Uber124
-        object o1 = p1.ProjectName.ToString() + p1.ProjectId.ToString() + p1.Duration.ToString();
-        Console.WriteLine(o1);//
-        bool ans=o.Equals(o1);//Uber124
-        Console.WriteLine(ans);
-        //bool ans= string.Equals(s, s1);
+        //object o=p.ProjectName.ToString() + p.ProjectId.ToString() + p.Duration.ToString();
+        //Console.WriteLine(o);//Uber124
+        //object o1 = p1.ProjectName.ToString() + p1.ProjectId.ToString() + p1.Duration.ToString();
+        //Console.WriteLine(o1);//
+        //bool ans=o.Equals(o1);//Uber124
+        //Console.WriteLine(ans);
+        ////bool ans= string.Equals(s, s1);
         //bool ans = s.Equals(s1);
         // Console.WriteLine(ans);
 
